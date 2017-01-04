@@ -60,6 +60,9 @@ namespace SQLiteSample.iOS
 				Console.WriteLine (" button clicked..... ");
 				Console.WriteLine (" button clicked..... ");
 				Console.WriteLine (" button clicked..... ");
+				Console.WriteLine (" button clicked..... ");
+				Console.WriteLine (" button clicked..... ");
+				Console.WriteLine (" button clicked..... ");
 			};
 
 		}
