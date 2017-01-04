@@ -56,7 +56,10 @@ namespace SQLiteSample.iOS
 
 				database.UpdateData ();
 
-				Console.WriteLine (" button click ");
+				Console.WriteLine (" button clicked..... ");
+				Console.WriteLine (" button clicked..... ");
+				Console.WriteLine (" button clicked..... ");
+				Console.WriteLine (" button clicked..... ");
 			};
 
 		}
