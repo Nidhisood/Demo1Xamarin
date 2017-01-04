@@ -10,8 +10,6 @@ namespace SQLiteSample.iOS
 	{
 		readonly SQLiteConnection db;
 
-		// Review commit test
-
 		public Database ()
 		{
 			const string databaseFileName = "TEAMSDatabase.db3";
@@ -60,6 +58,7 @@ namespace SQLiteSample.iOS
 				"Garry",
 				"Kamal Thakur",
 				"Amrik",
+				"Rohit"
 
 			};
 
@@ -80,7 +79,8 @@ namespace SQLiteSample.iOS
 				"Android",
 				"iOS",
 				"Android",
-				"iOS"
+				"iOS",
+				"Ionic"
 			};
 
 			lock (locker) {
