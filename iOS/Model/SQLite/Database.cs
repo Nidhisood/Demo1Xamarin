@@ -131,7 +131,6 @@ namespace SQLiteSample.iOS
 			Console.WriteLine (" table: " + db.Table<Stock> ().Table.TableName);
 		}
 
-
 		public void UpdateData ()
 		{
 			object locker = new object ();
@@ -149,9 +148,9 @@ namespace SQLiteSample.iOS
 
 				foreach (var item in table) {
 					Console.WriteLine (item.Key + ": name: " + item.Name + "  : tech: " + item.Technology);
+					Console.WriteLine (" test console");
 				}
 			}
-
 		}
 	}
 }
