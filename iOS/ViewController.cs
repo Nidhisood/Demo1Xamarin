@@ -54,9 +54,15 @@ namespace SQLiteSample.iOS
 				//				}));
 				//				backgroundTask.Start ();
 
-
 				database.UpdateData ();
 
+				Console.WriteLine (" button clicked..... ");
+				Console.WriteLine (" button clicked..... ");
+				Console.WriteLine (" button clicked..... ");
+				Console.WriteLine (" button clicked..... ");
+				Console.WriteLine (" button clicked..... ");
+				Console.WriteLine (" button clicked..... ");
+				Console.WriteLine (" button clicked..... ");
 			};
 
 		}

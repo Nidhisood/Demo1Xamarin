@@ -83,6 +83,13 @@ namespace SQLiteSample.iOS
 				"Ionic"
 			};
 
+			Console.WriteLine (" button clicked..... ");
+			Console.WriteLine (" button clicked..... ");
+			Console.WriteLine (" button clicked..... ");
+			Console.WriteLine (" button clicked..... ");
+			Console.WriteLine (" button clicked..... ");
+			Console.WriteLine (" button clicked..... ");
+
 			lock (locker) {
 
 				if (db.Table<Stock> ().Count () == 0) {
