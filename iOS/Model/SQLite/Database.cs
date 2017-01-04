@@ -10,7 +10,7 @@ namespace SQLiteSample.iOS
 	{
 		readonly SQLiteConnection db;
 
-		// Review commit 3 fdfgdhfghfg
+		// Review commit test
 
 		public Database ()
 		{
