@@ -14,12 +14,12 @@ namespace SQLiteSample.iOS
 		{
 			const string databaseFileName = "TEAMSDatabase.db3";
 
-			#if __ANDROID__
+#if __ANDROID__
 			string libraryPath = Environment.GetFolderPath (Environment.SpecialFolder.Personal);
-			#else
+#else
 			string documentsPath = Environment.GetFolderPath (Environment.SpecialFolder.Personal);
 			string librarypath = Path.Combine (documentsPath, "..", "Library");
-			#endif
+#endif
 
 			var dbPath = Path.Combine (librarypath, databaseFileName);
 			db = new SQLiteConnection (dbPath);
@@ -29,10 +29,8 @@ namespace SQLiteSample.iOS
 			if (!db.Table<Stock> ().Any () || db.Table<Stock> () == null)
 				db.CreateTable<Stock> ();
 
-//			if (db.Table<Stock> ().Table.TableName != "CreativeCrewSeasia")
-//				db.CreateTable<Stock> ();
-
-
+			//			if (db.Table<Stock> ().Table.TableName != "CreativeCrewSeasia")
+			//				db.CreateTable<Stock> ();
 
 			Console.WriteLine ("path: " + documentsPath);
 		}
@@ -86,7 +84,7 @@ namespace SQLiteSample.iOS
 			lock (locker) {
 
 				if (db.Table<Stock> ().Count () == 0) {
-					
+
 					//stock.name = "Nidhi Sood";
 
 					for (int i = 0; i < names.Count; i++) {
@@ -98,19 +96,19 @@ namespace SQLiteSample.iOS
 					}
 
 				}
-					
+
 				// only insert the data if it doesn't already exist
 				//if (db.Table<Stock> ().Count () == 0) {
 				// only insert the data if it doesn't already exist
-//				var newStock = new Stock ();
-//				newStock.Name = "AAPL";
-//				db.Insert (newStock);
-//				newStock = new Stock ();
-//				newStock.Name = "GOOG";
-//				db.Insert (newStock);
-//				newStock = new Stock ();
-//				newStock.Name = "MSFT";
-//				db.Insert (newStock);
+				//				var newStock = new Stock ();
+				//				newStock.Name = "AAPL";
+				//				db.Insert (newStock);
+				//				newStock = new Stock ();
+				//				newStock.Name = "GOOG";
+				//				db.Insert (newStock);
+				//				newStock = new Stock ();
+				//				newStock.Name = "MSFT";
+				//				db.Insert (newStock);
 				//}
 
 			}
